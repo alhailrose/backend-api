@@ -1,9 +1,4 @@
 import express from "express";
-import {
-  signinValidate,
-  signupValidate,
-} from "../validation/authenticationValidate.js";
-import { validate } from "../middleware/validate.js";
 import dotenv from "dotenv";
 import {
   signIn,

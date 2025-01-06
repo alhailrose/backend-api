@@ -26,6 +26,7 @@ const signUp = async (req, res) => {
     }
     const hashedPassword = await hashPassword(body.password);
     const [data] = await signupAuthModel(body, user_id, dates, hashedPassword);
+    console.log("User data saved:", data);
 
     const responseData = { ...body };
     delete responseData.password;
