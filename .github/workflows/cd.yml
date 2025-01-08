@@ -42,15 +42,15 @@ jobs:
           VERSION=${{ env.VERSION }}
 
           # Pastikan layanan menggunakan image terbaru
-          docker-compose pull
+          docker compose pull
 
           # Jalankan layanan
-          docker-compose up -d
+          docker compose up -d
           EOF
 
       # Step 6: Show Logs in Real-Time
       - name: Show Logs in Real-Time
         run: |
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }} << 'EOF'
-          docker-compose logs -f
+          docker compose logs -f
           EOF
