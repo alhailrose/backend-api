@@ -3,3 +3,4 @@ tests
 coverage
 .env
 .env.prod
+dist

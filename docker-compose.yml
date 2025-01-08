@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  backend-api:
+    image: heilrose/backend-test:${VERSION} # Gunakan tag yang sesuai
+    ports:
+      - "3000:3000" # Sesuaikan dengan port aplikasi Anda
+    env_file:
+      - .env # File untuk variabel lingkungan
+    restart: unless-stopped # Untuk memastikan container restart jika terjadi error
