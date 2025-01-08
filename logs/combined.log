@@ -1,0 +1,2 @@
+{"level":"info","message":"Request handled","method":"POST","path":"/signin","responseTime":"1280ms","status":200,"timestamp":"2025-01-08T11:55:00.454Z"}
+{"level":"info","message":"Request handled","method":"POST","path":"/error","responseTime":"3ms","status":404,"timestamp":"2025-01-08T11:55:33.284Z"}
