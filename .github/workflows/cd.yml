@@ -18,19 +18,39 @@ jobs:
         id: tag
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
-      # Step 3: Log in to Docker Hub
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v2
+      # Step 3: Set up SSH access to Droplets
+      - name: Set up SSH Agent
+        uses: webfactory/ssh-agent@v0.5.3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          ssh-private-key: ${{ secrets.DIGITALOCEAN_SSH_PRIVATE_KEY }}
 
-      # Step 4: Pull the Docker image with the matching version
-      - name: Pull Docker image
-        run: docker pull heilrose/backend-test:${{ env.VERSION }}
+      # Step 4: Login to Docker Hub and Pull Docker Image on Droplets
+      - name: Login to Docker Hub and Pull Docker Image
+        run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }} << 'EOF'
+          # Login ke Docker Hub
+          echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
-      # Step 5: Deploy with Docker Compose
+          # Pull Docker image dengan versi yang sesuai
+          docker pull heilrose/backend-test:${{ env.VERSION }}
+          EOF
+
+      # Step 5: Deploy using Docker Compose
       - name: Deploy using Docker Compose
         run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }} << 'EOF'
           VERSION=${{ env.VERSION }}
-          docker-compose -f docker-compose.yml up -d
+
+          # Pastikan layanan menggunakan image terbaru
+          docker-compose pull
+
+          # Jalankan layanan
+          docker-compose up -d
+          EOF
+
+      # Step 6: Show Logs in Real-Time
+      - name: Show Logs in Real-Time
+        run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }} << 'EOF'
+          docker-compose logs -f
+          EOF
