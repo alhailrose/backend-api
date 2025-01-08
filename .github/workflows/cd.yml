@@ -15,7 +15,7 @@ jobs:
 
       # Step 2: Get the Git tag
       - name: Set env
-        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
       - name: Test
         run: |
           echo $RELEASE_VERSION
@@ -47,13 +47,9 @@ jobs:
           # Pastikan layanan menggunakan image terbaru
           docker compose pull
 
-          # Jalankan layanan
-          docker compose up -d
-          EOF
+          # Hentikan dan hapus kontainer yang lama
+          docker compose down
 
-      # Step 6: Show Logs in Real-Time
-      - name: Show Logs in Real-Time
-        run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }} << 'EOF'
-          docker compose logs -f
+          # Jalankan layanan dengan image baru
+          docker compose up -d
           EOF
