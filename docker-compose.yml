@@ -1,17 +1,10 @@
 version: "3.8"
 
 services:
-  backend:
-    image: heilrose/backend-agronect:${VERSION}
-    container_name: backend-agronect
-    restart: always
+  backend-api:
+    image: heilrose/backend-test:${VERSION} # Gunakan tag yang sesuai
     ports:
-      - "3000:3000"
-    environment:
-      DB_NAME: agronect-skripsi
-      DB_USER: doadmin
-      DB_PASSWORD: $DB_PASSWORD
-      DB_HOST: database-skripsi-do-user-18408833-0.m.db.ondigitalocean.com
-      DB_PORT: 25060
-      JWT_SECRET: "baguskeren77"
-      REFRESH_TOKEN_SECRET: "bagusasik77"
+      - "3000:3000" # Sesuaikan dengan port aplikasi Anda
+    env_file:
+      - .env # File untuk variabel lingkungan
+    restart: unless-stopped # Untuk memastikan container restart jika terjadi error
