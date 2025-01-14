@@ -23,3 +23,28 @@
 {"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"160ms","status":200,"timestamp":"2025-01-14 10:58:39"}
 {"level":"error","message":"Email not registered","method":"POST","path":"/signin","responseTime":"86ms","status":400,"timestamp":"2025-01-14 10:58:39"}
 {"level":"error","message":"Password not match","method":"POST","path":"/signin","responseTime":"82ms","status":401,"timestamp":"2025-01-14 10:58:40"}
+{"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"1067ms","status":201,"timestamp":"2025-01-14 17:19:21"}
+{"level":"error","message":"Email already registered","method":"POST","path":"/signup","responseTime":"30ms","status":400,"timestamp":"2025-01-14 17:19:21"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"155ms","status":200,"timestamp":"2025-01-14 17:19:21"}
+{"level":"error","message":"Email not registered","method":"POST","path":"/signin","responseTime":"63ms","status":400,"timestamp":"2025-01-14 17:19:21"}
+{"level":"error","message":"Password not match","method":"POST","path":"/signin","responseTime":"83ms","status":401,"timestamp":"2025-01-14 17:19:21"}
+{"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"664ms","status":201,"timestamp":"2025-01-14 17:19:34"}
+{"level":"error","message":"Email already registered","method":"POST","path":"/signup","responseTime":"127ms","status":400,"timestamp":"2025-01-14 17:19:34"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"83ms","status":200,"timestamp":"2025-01-14 17:19:35"}
+{"level":"error","message":"Email not registered","method":"POST","path":"/signin","responseTime":"24ms","status":400,"timestamp":"2025-01-14 17:19:35"}
+{"level":"error","message":"Password not match","method":"POST","path":"/signin","responseTime":"125ms","status":401,"timestamp":"2025-01-14 17:19:35"}
+{"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"914ms","status":201,"timestamp":"2025-01-14 17:20:06"}
+{"level":"error","message":"Email already registered","method":"POST","path":"/signup","responseTime":"48ms","status":400,"timestamp":"2025-01-14 17:20:06"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"103ms","status":200,"timestamp":"2025-01-14 17:20:07"}
+{"level":"error","message":"Email not registered","method":"POST","path":"/signin","responseTime":"30ms","status":400,"timestamp":"2025-01-14 17:20:07"}
+{"level":"error","message":"Password not match","method":"POST","path":"/signin","responseTime":"81ms","status":401,"timestamp":"2025-01-14 17:20:07"}
+{"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"659ms","status":201,"timestamp":"2025-01-14 17:20:12"}
+{"level":"error","message":"Email already registered","method":"POST","path":"/signup","responseTime":"87ms","status":400,"timestamp":"2025-01-14 17:20:12"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"181ms","status":200,"timestamp":"2025-01-14 17:20:13"}
+{"level":"error","message":"Email not registered","method":"POST","path":"/signin","responseTime":"30ms","status":400,"timestamp":"2025-01-14 17:20:13"}
+{"level":"error","message":"Password not match","method":"POST","path":"/signin","responseTime":"81ms","status":401,"timestamp":"2025-01-14 17:20:13"}
+{"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"342ms","status":201,"timestamp":"2025-01-14 17:20:16"}
+{"level":"error","message":"Email already registered","method":"POST","path":"/signup","responseTime":"32ms","status":400,"timestamp":"2025-01-14 17:20:16"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"83ms","status":200,"timestamp":"2025-01-14 17:20:16"}
+{"level":"error","message":"Email not registered","method":"POST","path":"/signin","responseTime":"28ms","status":400,"timestamp":"2025-01-14 17:20:16"}
+{"level":"error","message":"Password not match","method":"POST","path":"/signin","responseTime":"81ms","status":401,"timestamp":"2025-01-14 17:20:16"}

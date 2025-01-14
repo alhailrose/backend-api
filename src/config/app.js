@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import createError from "http-errors";
 import logs from "../middleware/logs.js";
 import authenticationRoute from "../routes/authenticationRoute.js";
+import usersRoute from "../routes/usersRoute.js";
 import promMiddleware from "express-prometheus-middleware";
 import logger from "../middleware/logger.js";
 
@@ -31,6 +32,7 @@ export function createApp() {
 
   // Authentication Routes
   app.use(authenticationRoute);
+  app.use(usersRoute);
 
   // Simulated Error Route
   app.get("/error", () => {
