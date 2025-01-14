@@ -1,10 +1,6 @@
 {
   "name": "backend-api",
-<<<<<<< HEAD
-  "version": "1.0.0",
-=======
   "version": "1.0.2",
->>>>>>> beb4b841914659b38996ea6d55c990a66740fc55
   "description": "Backend API untuk aplikasi penyakit tanaman",
   "main": "server.js",
   "type": "module",
