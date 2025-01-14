@@ -1,2 +1,28 @@
 {"level":"info","message":"Request handled","method":"POST","path":"/signin","responseTime":"1280ms","status":200,"timestamp":"2025-01-08T11:55:00.454Z"}
 {"level":"info","message":"Request handled","method":"POST","path":"/error","responseTime":"3ms","status":404,"timestamp":"2025-01-08T11:55:33.284Z"}
+2025-01-08 21:37:59 [INFO]: Request handled
+2025-01-08 21:38:28 [INFO]: Request handled
+2025-01-08 21:42:45 [INFO]: Request handled - Response Time: 1027msms
+2025-01-08 21:44:04 [INFO]: Request handled - Response Time: 226msms
+2025-01-08 21:44:48 [INFO]: Request handled - Response Time: 32msms
+2025-01-08 21:45:37 [INFO]: Request handled - Response Time: 638msms
+{"level":"info","message":"Request handled","method":"POST","path":"/signup","responseTime":"847ms","status":400,"timestamp":"2025-01-08T14:46:16.501Z"}
+{"level":"info","message":"Request handled","method":"POST","path":"/signup","responseTime":"715ms","status":400,"timestamp":"2025-01-08 21:48:17"}
+{"level":"info","message":"Request handled","method":"GET","path":"/signup","responseTime":"2ms","status":404,"timestamp":"2025-01-08 21:48:34"}
+{"level":"info","message":"Request handled","method":"GET","path":"/signup","responseTime":"4ms","status":500,"timestamp":"2025-01-08 21:50:17"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"1ms","status":500,"timestamp":"2025-01-08 21:50:37"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"4ms","status":500,"timestamp":"2025-01-08 21:52:12"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"3ms","status":500,"timestamp":"2025-01-08 21:52:21"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"2ms","status":500,"timestamp":"2025-01-08 21:52:44"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"6ms","status":200,"timestamp":"2025-01-08 21:53:58"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"6ms","status":200,"timestamp":"2025-01-08 21:55:33"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"8ms","status":400,"timestamp":"2025-01-08 22:03:36"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"7ms","status":400,"timestamp":"2025-01-08 22:04:12"}
+{"level":"info","message":"Request handled","method":"GET","path":"/error","responseTime":"6ms","status":500,"timestamp":"2025-01-08 22:05:43"}
+{"level":"info","message":"Request handled","method":"POST","path":"/signup","responseTime":"813ms","status":400,"timestamp":"2025-01-08 22:06:40"}
+{"level":"info","message":{"method":"POST","path":"/signup","responseTime":"849ms","status":400,"timestamp":"2025-01-08T15:07:24.258Z"},"timestamp":"2025-01-08 22:07:24"}
+{"level":"error","message":"Error occurred","method":"POST","path":"/signup","responseTime":"639ms","status":400,"timestamp":"2025-01-08 22:08:56"}
+{"error":{"detail":"{\"status\":\"failed\",\"message\":\"Email already registered\",\"data\":null}"},"level":"error","message":"Error occurred","method":"POST","path":"/signup","responseTime":"707ms","status":400,"timestamp":"2025-01-08 22:10:49"}
+{"level":"error","message":"Email already registered","method":"POST","path":"/signup","responseTime":"787ms","status":400,"timestamp":"2025-01-08 22:13:51"}
+{"level":"error","message":"Email already registered","method":"POST","path":"/signup","responseTime":"493ms","status":400,"timestamp":"2025-01-08 22:15:49"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"86ms","status":200,"timestamp":"2025-01-08 22:16:16"}
