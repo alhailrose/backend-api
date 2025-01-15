@@ -1,0 +1,5 @@
+{"level":"error","message":"Access denied for user ''@'localhost' (using password: NO)","method":"POST","path":"/signup","responseTime":"70ms","status":500,"timestamp":"2025-01-15 07:36:47"}
+{"level":"error","message":"Access denied for user ''@'localhost' (using password: NO)","method":"POST","path":"/signup","responseTime":"7ms","status":500,"timestamp":"2025-01-15 07:36:47"}
+{"level":"error","message":"Internal server error","method":"POST","path":"/signin","responseTime":"6ms","status":500,"timestamp":"2025-01-15 07:36:47"}
+{"level":"error","message":"Internal server error","method":"POST","path":"/signin","responseTime":"3ms","status":500,"timestamp":"2025-01-15 07:36:47"}
+{"level":"error","message":"Internal server error","method":"POST","path":"/signin","responseTime":"4ms","status":500,"timestamp":"2025-01-15 07:36:48"}

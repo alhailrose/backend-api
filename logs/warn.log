@@ -10,3 +10,6 @@
 {"level":"warn","message":"Email already registered","method":"POST","path":"/signup","responseTime":"79ms","status":400,"timestamp":"2025-01-15 07:32:13"}
 {"level":"warn","message":"Email not registered","method":"POST","path":"/signin","responseTime":"140ms","status":400,"timestamp":"2025-01-15 07:32:14"}
 {"level":"warn","message":"Password not match","method":"POST","path":"/signin","responseTime":"166ms","status":401,"timestamp":"2025-01-15 07:32:14"}
+{"level":"warn","message":"Email already registered","method":"POST","path":"/signup","responseTime":"76ms","status":400,"timestamp":"2025-01-15 07:37:04"}
+{"level":"warn","message":"Email not registered","method":"POST","path":"/signin","responseTime":"26ms","status":400,"timestamp":"2025-01-15 07:37:04"}
+{"level":"warn","message":"Password not match","method":"POST","path":"/signin","responseTime":"199ms","status":401,"timestamp":"2025-01-15 07:37:05"}
