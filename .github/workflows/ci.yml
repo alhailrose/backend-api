@@ -26,11 +26,11 @@ jobs:
 
       - name: Set database environment variables
         run: |
-          echo "DB_HOST=${{ secrets.DB_HOST }}" >> $GITHUB_ENV
-          echo "DB_PORT=${{ secrets.DB_PORT }}" >> $GITHUB_ENV
-          echo "DB_USER=${{ secrets.DB_USER }}" >> $GITHUB_ENV
-          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> $GITHUB_ENV
-          echo "DB_NAME=${{ secrets.DB_NAME }}" >> $GITHUB_ENV
+          echo "PROD_DB_HOST=${{ secrets.PROD_DB_HOST }}" >> $GITHUB_ENV
+          echo "PROD_DB_PORT=${{ secrets.PROD_DB_PORT }}" >> $GITHUB_ENV
+          echo "PROD_DB_USER=${{ secrets.PROD_DB_USER }}" >> $GITHUB_ENV
+          echo "PROD_DB_PASSWORD=${{ secrets.PROD_DB_PASSWORD }}" >> $GITHUB_ENV
+          echo "PROD_DB_NAME=${{ secrets.PROD_DB_NAME }}" >> $GITHUB_ENV
           echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> $GITHUB_ENV
           echo "REFRESH_TOKEN_SECRET=${{ secrets.REFRESH_TOKEN_SECRET }}" >> $GITHUB_ENV
 
@@ -40,11 +40,11 @@ jobs:
           mysql -h $DB_HOST -P $DB_PORT -u $DB_USER -p$DB_PASSWORD -e "USE $DB_NAME; SHOW TABLES;"
         env:
           NODE_ENV: production
-          PROD_DB_HOST: ${{ secrets.DB_HOST }}
-          PROD_DB_PORT: ${{ secrets.DB_PORT }}
-          PROD_DB_USER: ${{ secrets.DB_USER }}
-          PROD_DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          PROD_DB_NAME: ${{ secrets.DB_NAME }}
+          PROD_DB_HOST: ${{ secrets.PROD_DB_HOST }}
+          PROD_DB_PORT: ${{ secrets.PROD_DB_PORT }}
+          PROD_DB_USER: ${{ secrets.PROD_DB_USER }}
+          PROD_DB_PASSWORD: ${{ secrets.PROD_DB_PASSWORD }}
+          PROD_DB_NAME: ${{ secrets.PROD_DB_NAME }}
       - name: Run lint
         run: npm run eslint
 
