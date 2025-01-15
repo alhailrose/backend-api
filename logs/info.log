@@ -11,3 +11,7 @@
 {"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"109ms","status":200,"timestamp":"2025-01-15 07:37:04"}
 {"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"943ms","status":201,"timestamp":"2025-01-15 08:33:33"}
 {"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"154ms","status":200,"timestamp":"2025-01-15 08:33:33"}
+{"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"1869ms","status":201,"timestamp":"2025-01-15 08:38:44"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"136ms","status":200,"timestamp":"2025-01-15 08:38:45"}
+{"level":"info","message":"User created successfully","method":"POST","path":"/signup","responseTime":"1828ms","status":201,"timestamp":"2025-01-15 08:38:52"}
+{"level":"info","message":"Login success","method":"POST","path":"/signin","responseTime":"90ms","status":200,"timestamp":"2025-01-15 08:38:52"}
