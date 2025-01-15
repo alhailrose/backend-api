@@ -1,0 +1,3 @@
+{"level":"warn","message":"Email already registered","method":"POST","path":"/signup","responseTime":"43ms","status":400,"timestamp":"2025-01-15 07:25:51"}
+{"level":"warn","message":"Email not registered","method":"POST","path":"/signin","responseTime":"31ms","status":400,"timestamp":"2025-01-15 07:25:51"}
+{"level":"warn","message":"Password not match","method":"POST","path":"/signin","responseTime":"80ms","status":401,"timestamp":"2025-01-15 07:25:51"}

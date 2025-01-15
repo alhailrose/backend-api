@@ -1,8 +1,12 @@
 import winston from "winston";
 
+// Custom filter untuk membatasi level log
+const filterByLevel = (level) => {
+  return winston.format((info) => (info.level === level ? info : false))();
+};
+
 // Konfigurasi Winston Logger
 const logger = winston.createLogger({
-  level: "info", // Level log: error, warn, info, http, verbose, debug, silly
   format: winston.format.combine(
     winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
     winston.format.errors({ stack: true }),
@@ -21,12 +25,22 @@ const logger = winston.createLogger({
           return `${info.timestamp} [${info.level}]: ${info.message}${additionalInfo}`;
         })
       ),
-    }), // Log ke console
-    new winston.transports.File({ filename: "logs/success.log" }), // Log ke file
+    }),
     new winston.transports.File({
-      filename: "logs/errors.log",
+      filename: "logs/info.log",
+      level: "info",
+      format: filterByLevel("info"), // Hanya log level "info"
+    }),
+    new winston.transports.File({
+      filename: "logs/warn.log",
+      level: "warn",
+      format: filterByLevel("warn"), // Hanya log level "warn"
+    }),
+    new winston.transports.File({
+      filename: "logs/error.log",
       level: "error",
-    }), // Log khusus error
+      format: filterByLevel("error"), // Hanya log level "error"
+    }),
   ],
 });
 
